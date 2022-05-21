@@ -1,0 +1,7 @@
+<form [formGroup]="selectionForm">
+  <select formControlName="selection" (change)="sorting()">
+    <option *ngFor="let sel of selectionData" [ngValue]="sel.name">
+      {{ sel.name }}
+    </option>
+  </select>
+</form>
